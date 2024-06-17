@@ -1,5 +1,11 @@
 Police Department Database Project Demo
 
+Abstract
+
+The database project revolves the implementation of a database system for police headquarters focusing on managing various entities for law enforcement operations. The system provide and opportunities such as management of officers, departments, criminals and crime records which belongs to the department’s jurisdiction. This projects aims to design a database system for a police headquarters for managing officers, departments, locations, criminals and crimes. The system will be beneficial in order to organize for crucial information to officers, departmental structures, criminal records and crimes. Users who have permission to access it such as law enforcement personels, officers, detectives and administrative staff, who will utilize it to record, track and analyze pertinent data related to criminal activities, law enforcement operations or controlling the hierarchical structure in the police department. Thats the reasons why it is benefical to contribute in various situations.
+
+In Police Department Database system there 5 entities and 4 of them have their own primary keys and one weak entities has it’s partial key. The system has 4 relationship including 1 identifying relationship connected with weak entity to have a meaningful data. Also the system has 1 ternary relationship connected with 3 entities. One of the entities have foreign key related with one of the other entity’s primary key.
+
 The person who wants to start the Project must have a java running IDE on computer and the WindowBuilder extension of the Swing library in this IDE. Otherwise, the code cannot run. At the same time, the MySQL Connector must be included in the IDE.
 Database System for Police Department 
 
