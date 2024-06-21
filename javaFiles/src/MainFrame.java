@@ -10,21 +10,21 @@ public class MainFrame extends JFrame {
     private JLabel lblNewLabel_1;
 
     public MainFrame() {
-        // Ana pencere ayarları
+        
         setTitle("Police Department Forms");
         setSize(998, 526);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
         
-                // Ana panel oluştur
+                
                 mainPanel = new JPanel();
                 mainPanel.setBounds(0, 0, 992, 526);
                 mainPanel.setLayout(null);
                 getContentPane().add(mainPanel);
                 mainPanel.setVisible(false);
                 
-                        // Ana paneldeki butonlar
+                       
                         btnCase = new JButton("Case");
                         btnCase.setBounds(637, 202, 179, 56);
                         btnCriminal = new JButton("Criminal");
@@ -36,14 +36,14 @@ public class MainFrame extends JFrame {
                         btnEvidence = new JButton("Evidence");
                         btnEvidence.setBounds(390, 284, 190, 56);
                         
-                                // Buton eylemleri
+                                
                                 btnCase.addActionListener(e -> openForm(new casefrm()));
                                 btnCriminal.addActionListener(e -> openForm(new criminalfrm()));
                                 btnDepartment.addActionListener(e -> openForm(new departmentfrm()));
                                 btnOfficer.addActionListener(e -> openForm(new officerfrm()));
                                 btnEvidence.addActionListener(e -> openForm(new evidencefrm()));
                                 
-                                        // Butonları ana panele ekleme
+                                       
                                         mainPanel.add(btnCase);
                                         mainPanel.add(btnCriminal);
                                         mainPanel.add(btnDepartment);
@@ -55,7 +55,7 @@ public class MainFrame extends JFrame {
                                         lblNewLabel_1.setBounds(0, -107, 982, 705);
                                         mainPanel.add(lblNewLabel_1);
 
-        // Login paneli oluştur
+       
         loginPanel = new JPanel();
         loginPanel.setBounds(0, 0, 992, 526);
         getContentPane().add(loginPanel);
@@ -86,16 +86,16 @@ public class MainFrame extends JFrame {
         lblNewLabel.setBounds(0, -83, 1020, 637);
         loginPanel.add(lblNewLabel);
 
-        // Buton eylemi
+       
         btnLogin.addActionListener(e -> {
             String username = txtUsername.getText();
             String password = new String(txtPassword.getPassword());
 
             if (username.equals("admin") && password.equals("123")) {
-                // Giriş başarılı, ana panele geç
+               
                 showMainPanel();
             } else {
-                // Giriş başarısız
+               
                 JOptionPane.showMessageDialog(this, "Invalid username or password", "Error", JOptionPane.ERROR_MESSAGE);
             }
         });
